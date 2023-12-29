@@ -5,20 +5,20 @@
 class MilvusBackup < Formula
   desc ""
   homepage "https://github.com/zilliztech/milvus-backup"
-  version "0.4.4"
+  version "0.4.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.4.4/milvus-backup_Darwin_arm64.tar.gz"
-      sha256 "27a5a801d20d96e1e023d3c4c8f486a39b9c3cce561706712f994d3dfac6c13a"
+      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.4.5/milvus-backup_Darwin_arm64.tar.gz"
+      sha256 "77086d503ea67ffb8c929afbf750ac89e344d3a187ffc7441ff3a0e276eb1c91"
 
       def install
         bin.install "milvus-backup"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.4.4/milvus-backup_Darwin_x86_64.tar.gz"
-      sha256 "0ad69123f2e1aa69ce0fe51347f0e7a4d6c9abcbec123b4e9aed8020097ad6f7"
+      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.4.5/milvus-backup_Darwin_x86_64.tar.gz"
+      sha256 "4850612bdf58c1690aaf37c9934cb1e1435f37315a27d2e81d1b37487c83f3ce"
 
       def install
         bin.install "milvus-backup"
@@ -28,16 +28,16 @@ class MilvusBackup < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.4.4/milvus-backup_Linux_arm64.tar.gz"
-      sha256 "8265217052f89a53ad34aa5910c78f16bd462583142370f44aaa85c4dbc2ae5f"
+      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.4.5/milvus-backup_Linux_arm64.tar.gz"
+      sha256 "97124989a4dba35a1594ba0ebabdef970321670b036287881d84c6d769bdb245"
 
       def install
         bin.install "milvus-backup"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.4.4/milvus-backup_Linux_x86_64.tar.gz"
-      sha256 "90ad80903761b63a5188a8d0d1251d02cb9f086b3b369c5f0ea093cb3328d2bb"
+      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.4.5/milvus-backup_Linux_x86_64.tar.gz"
+      sha256 "ca6465e8b6eea6c487687a13e271d056ded26459052a15110d989b85348bbfb6"
 
       def install
         bin.install "milvus-backup"
