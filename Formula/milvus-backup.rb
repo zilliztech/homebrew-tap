@@ -10,7 +10,7 @@ class MilvusBackup < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/zilliztech/milvus-backup/releases/download/v0.5.5/milvus-backup_Darwin_x86_64.tar.gz"
-      sha256 "8b986f458ba1aad6d4186f0c234a539280ec9442d702dbc4b731eddbcc435519"
+      sha256 "940aa352bcfb318117c173b8c0a26afbc06cb0f0fb10507314480aa4e31374f9"
 
       def install
         bin.install "milvus-backup"
@@ -18,7 +18,7 @@ class MilvusBackup < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/zilliztech/milvus-backup/releases/download/v0.5.5/milvus-backup_Darwin_arm64.tar.gz"
-      sha256 "eda4e152d6de4c63938c2252b3ea9e619502c6a13bad4780cbbe3e7cf4b77fe2"
+      sha256 "41b611eb01829f8d941c434db161da7fe24a7edc1e3aa7a99556e9c5af871b1b"
 
       def install
         bin.install "milvus-backup"
@@ -29,14 +29,14 @@ class MilvusBackup < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/zilliztech/milvus-backup/releases/download/v0.5.5/milvus-backup_Linux_x86_64.tar.gz"
-      sha256 "4bf2a596a482a3f3e24279e88d3b1b289a7a8fb9e8f2c0fabd6d6cea3c5465ba"
+      sha256 "8086b011298b96bc88dad338335d324fa035bee4d9f44c65f4fbd2c45570cab5"
       def install
         bin.install "milvus-backup"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/zilliztech/milvus-backup/releases/download/v0.5.5/milvus-backup_Linux_arm64.tar.gz"
-      sha256 "ddff6f6cae2bb2d1b42dc4d3bbe9a3bef569321dfc65cca9e3c69e6b59cea027"
+      sha256 "e9886c4a0847986cc4b0546f38fe5ae4339699ceba653954f8cb3c9894c4c4e2"
       def install
         bin.install "milvus-backup"
       end
