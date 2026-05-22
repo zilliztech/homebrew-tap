@@ -5,20 +5,20 @@
 class MilvusBackup < Formula
   desc ""
   homepage "https://github.com/zilliztech/milvus-backup"
-  version "0.5.14"
+  version "0.5.15"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.5.14/milvus-backup_0.5.14_Darwin_x86_64.tar.gz"
-      sha256 "b6a9b09ce3c5a62e011c4f3d503c7ece87daf3159e9f4ef40cd9fd00669bed9b"
+      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.5.15/milvus-backup_0.5.15_Darwin_x86_64.tar.gz"
+      sha256 "f8b16a7cd74edf9a6d9ee7d15b5e8e6a93870fb2a3a5731c011f747f7bcacf9e"
 
       define_method(:install) do
         bin.install "milvus-backup"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.5.14/milvus-backup_0.5.14_Darwin_arm64.tar.gz"
-      sha256 "2c758ad0edd578be5d0d230f7f1a721e61ef40d3d9ebcd205a3416aa11d15562"
+      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.5.15/milvus-backup_0.5.15_Darwin_arm64.tar.gz"
+      sha256 "045f759e2a76e350286980a63d7f16dc7e4520e91357f308fbbde17c49de9564"
 
       define_method(:install) do
         bin.install "milvus-backup"
@@ -28,15 +28,15 @@ class MilvusBackup < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.5.14/milvus-backup_0.5.14_Linux_x86_64.tar.gz"
-      sha256 "fbe60d97aa955f638ff620e63d477caefe7e5564e309ab826d3ceee6274f8571"
+      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.5.15/milvus-backup_0.5.15_Linux_x86_64.tar.gz"
+      sha256 "9f538c10415e492765fb24f4b5c6cc30281137ec4fb41003241769429e29867e"
       define_method(:install) do
         bin.install "milvus-backup"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.5.14/milvus-backup_0.5.14_Linux_arm64.tar.gz"
-      sha256 "e703561963557e19ee959d516fdd43d9865ea1d0764ee4b8efc37e407bc7ac8f"
+      url "https://github.com/zilliztech/milvus-backup/releases/download/v0.5.15/milvus-backup_0.5.15_Linux_arm64.tar.gz"
+      sha256 "c82008bc725a2f682880a8b94205abac269fb2d68f664b07c7066a08139dda69"
       define_method(:install) do
         bin.install "milvus-backup"
       end
